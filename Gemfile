@@ -46,4 +46,6 @@ group :development do
 end
 
 gem 'webpacker', github: 'rails/webpacker'
+gem 'react_webpack_rails', path: '~/netguru/rwr/react_webpack_rails'
 
+gem 'rwr-view_helpers'

@@ -2,6 +2,7 @@
 
 const merge = require('webpack-merge')
 const sharedConfig = require('./shared.js')
+const webpack = require('webpack')
 
 module.exports = merge(sharedConfig, {
   devtool: 'sourcemap',
@@ -12,5 +13,9 @@ module.exports = merge(sharedConfig, {
 
   output: {
     pathinfo: true
-  }
+  },
+    plugins: [
+        new webpack.NamedModulesPlugin(),
+
+    ]
 })

@@ -7,6 +7,12 @@ GIT
       multi_json (~> 1.2)
       railties (>= 4.2)
 
+PATH
+  remote: ../netguru/rwr/react_webpack_rails
+  specs:
+    react_webpack_rails (0.7.0)
+      rails (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -112,6 +118,10 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (12.0.0)
     rdoc (4.3.0)
+    rwr-view_helpers (0.2.0)
+      rails
+      react_webpack_rails (>= 0.6.0)
+      sprockets (>= 3.0)
     sass (3.4.23)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -157,6 +167,8 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.8)
+  react_webpack_rails!
+  rwr-view_helpers
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

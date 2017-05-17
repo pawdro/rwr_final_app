@@ -8,3 +8,16 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
+
+import RWR from 'react-webpack-rails';
+RWR.run();
+
+import HelloWorld from './hello-world';
+RWR.registerComponent('HelloWorld', HelloWorld);
+
+import 'react-hot-loader/patch';
+
+if (module.hot) {
+  module.hot.accept();
+  RWR.reloadNodes();
+}
